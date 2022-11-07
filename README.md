@@ -1,6 +1,6 @@
 # GuviInternTask
 This project contains three modules 
-# register, login, and profiles Page
+# register, login, and profile Page
 -------------------------------
 # Description
 * register page contains validation and posting the user data.
