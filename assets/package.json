@@ -1,0 +1,17 @@
+{
+  "name": "guviproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ajax": "0.0.4",
+    "jquery": "^3.6.1",
+    "php": "^1.0.2",
+    "sass": "^1.55.0"
+  }
+}

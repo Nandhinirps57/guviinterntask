@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./css/profile.css">
+    <link rel="stylesheet" href="./assest/node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body >
+    <section >
+        <div  class="main-content">
+          <!-- Header -->
+          <div
+            class="header pb-8 pt-5 pt-lg-8 d-flex align-items-center"
+            style="
+              min-height: 600px;
+              background-image: url(https://raw.githubcontent.com/creativetimofficial/argon-dashboard/gh-pages/assets-old/img/theme/profile-cover.jpg);
+              background-size: cover;
+              background-position: center top;
+            "
+          >
+            <!-- Mask -->
+            <span class="mask bg-gradient-default opacity-8"></span>
+            <!-- Header container -->
+            <div class="container-fluid d-flex align-items-center">
+              <div class="row">
+                <div class="col-lg-7 col-md-10">
+                  <h1 id="head"  class="display-2 text-white"></h1>
+                  <p class="text-white mt-0 mb-5">
+                    This is your profile page. You can see the progress you've made
+                    with your work and manage your projects or assigned tasks
+                  </p>
+                  <a id="edit" href="#!" onclick="logout()" class="btn btn-info"
+                    >Logout profile</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Page content -->
+          <div class="container-fluid mt--7">
+            <div class="row">
+              <div class="col-xl-4 order-xl-2 mb-5 mb-xl-0">
+                <div class="card card-profile shadow">
+                  <div class="row justify-content-center">
+                    <div class="col-lg-3 order-lg-2">
+                      <div class="card-profile-image">
+                        <a href="#">
+                          <img
+                            src="https://demos.creative-tim.com/argon-dashboard/assets-old/img/theme/team-4.jpg"
+                            class="rounded-circle"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="
+                      card-header
+                      text-center
+                      border-0
+                      pt-8 pt-md-4
+                      pb-0 pb-md-4
+                    "
+                  >
+                    <div class="d-flex justify-content-between">
+                      <a href="#" onclick="logout()" class="btn btn-sm btn-info mr-4">Logout</a>
+                      <a href="#" class="btn btn-sm btn-default float-right"
+                        >Remove</a
+                      >
+                    </div>
+                  </div>
+                  <div class="card-body pt-0 pt-md-4">
+                    <div class="row">
+                      <div class="col">
+                        <div
+                          class="
+                            card-profile-stats
+                            d-flex
+                            justify-content-center
+                            mt-md-5
+                          "
+                        >
+                          <div>
+                            <span class="heading">Name</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <br />
+                    <div class="text-center">
+                      <h3 id="head3"><span class="font-weight-light"></span></h3>
+                      <div class="h5 font-weight-300">
+                        <i class="ni location_pin mr-2"></i> <span>city ,address</span> 
+                         
+                      </div>
+                      <div class="h5 mt-4">
+                        <i class="ni business_briefcase-24 mr-2"></i>Working -
+                        Manager
+                      </div>
+                      <div>
+                        <i class="ni education_hat mr-2"></i>University of business
+                        Management
+                      </div>
+                      <hr class="my-4" />
+                      <p>
+                        Ryan — the name taken by Melbourne-raised, Brooklyn-based
+                        Nick Murphy — writes, performs and records all of his own
+                        music.
+                      </p>
+                      <a href="#">Show more</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-8 order-xl-1">
+                <div class="card bg-sec shadow">
+                  <div class="card-header bg-white border-0">
+                    <div class="row align-items-center">
+                      <div class="col-8">
+                        <h3 class="mb-0">My account</h3>
+                      </div>
+                      <div class="col-4 text-right">
+                        <a onclick="submit(true)" class=" btn btn-sm btn-primary" 
+                        data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"
+                          >Submit</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <form class="">
+                      <h6 class="heading-small text-muted mb-4">
+                        User information
+                      </h6>
+                      <div class="pl-lg-4">
+                        <div class="row">
+                          <div class="col-lg-6">
+                            <div class="form-group focused">
+                              <label class="form-control-label" for="userName"
+                                >Username</label
+                              >
+                              <input oninput="inputs(event)"
+                                type="text"
+                                id="userName"
+                                class="form-control form-control-alternative"
+                                placeholder="Username"
+                              
+                              />
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="form-group">
+                              <label class="form-control-label" for="email"
+                                >Email address</label
+                              >
+                              <input
+                                type="email"
+                                id="email"
+                                class="form-control form-control-alternative"
+                                placeholder="jesse@example.com"
+                                oninput="inputs(event)"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-lg-6">
+                            <div class="form-group focused">
+                              <label
+                                class="form-control-label"
+                                for="firstName"
+                                >First name</label
+                              >
+                              <input
+                                type="text"
+                                id="firstName"
+                                class="form-control form-control-alternative"
+                                placeholder="First name"
+                                oninput="inputs(event)"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="form-group focused">
+                              <label
+                                class="form-control-label"
+                                for="lastName"
+                                >Last name</label
+                              >
+                              <input
+                                type="text"
+                                id="lastName"
+                                class="form-control form-control-alternative"
+                                placeholder="Last name"
+                                oninput="inputs(event)"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr class="my-4" />
+                      <!-- Address -->
+                      <h6 class="heading-small text-muted mb-4">
+                        Contact information
+                      </h6>
+                      <div class="pl-lg-4">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="form-group focused">
+                              <label class="form-control-label" for="address"
+                                >Address</label
+                              >
+                              <input
+                                id="address"
+                                class="form-control form-control-alternative"
+                                placeholder="Home Address"
+                                type="text"
+                                oninput="inputs(event)"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-lg-4">
+                            <div class="form-group focused">
+                              <label class="form-control-label" for="city"
+                                >City</label
+                              >
+                              <input
+                                type="text"
+                                id="city"
+                                class="form-control form-control-alternative"
+                                placeholder="City"
+                                oninput="inputs(event)"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-lg-4">
+                            <div class="form-group focused">
+                              <label class="form-control-label" for="mobile"
+                                >Mobile number</label
+                              >
+                              <input
+                                type="text"
+                                id="mobile"
+                                class="form-control form-control-alternative"
+                                placeholder="Mobile number"
+                                oninput="inputs(event)"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-lg-4">
+                            <div class="form-group">
+                              <label class="form-control-label" for="postalCode"
+                                >Postal code</label
+                              >
+                              <input
+                                type="number"
+                                id="postalCode"
+                                class="form-control form-control-alternative"
+                                placeholder="Postal code"
+                                oninput="inputs(event)"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr class="my-4" />
+                      <!-- Description -->
+                      <h6 class="heading-small text-muted mb-4">About me</h6>
+                      <div class="pl-lg-4">
+                        <div class="form-group focused">
+                          <label for="aboutMe">About Me</label>
+                          <textarea
+                            rows="4"
+                            class="form-control form-control-alternative"
+                            placeholder="A few words about you ..."
+                            id="aboutMe"
+                            oninput="inputs(event)"
+                          >
+    A beautiful Dashboard for yours. Add your status.</textarea
+                          >
+                        </div>
+                      </div>
+                    </form>
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="footer">
+          <div class="row align-items-center justify-content-xl-between">
+            <div class="col-xl-6 m-auto text-center">
+              <div class="copyright">
+                <p>
+                  Made with <a href="#" target="_blank">Brand</a> by Creative Tim
+                </p>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </section>
+</body>
+</html>
+
+<script src="./assets/node_modules/jquery/dist/jquery.js"></script>
+<script lang="js" src="./js/profile.js"> </script>
+<script src="./assets/node_modules/bootstrap/dist/js/bootstrap.js"></script>

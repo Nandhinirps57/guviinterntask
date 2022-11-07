@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./css/register.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+</head>
+
+<body style="background-color: #333333">
+    <br />
+    <div class="text-center"><img src="./assets/Pro.png" class="rounded-circle bg-dark p-1 crl" width="150"
+            height="120" alt="Stocks" /></div>
+
+    <br />
+<form id="form">
+    <div  class=" d-flex justify-content-center Con">
+        <div class=" bg-primary pt-3 pb-2 p-5 box Cons">
+            <h1>Sign Up</h1>
+            <label for="">Select Branch</label>
+            <select name="">
+                <option>bangalore</option>
+                <option>Salem</option>
+                <option>Chennai</option>
+            </select> <br>
+            <br />
+            <div class="input-container">
+                <input id="name" oninput="validate(event,false)" type="text" required="" />
+                <label> Name</label><span id="name1" class="text-start small"></span>
+            </div>
+            <div class="input-container">
+                <input id="email" oninput="validate(event,false)" type="text" required="" />
+                <label>Email</label> <span id="email1" class="small"> </span>
+            </div>
+            <div id="see" class="input-container">
+                <input oninput="validate(event,false)" id="password" type="password" required="" />
+                <label>Password</label>
+                <p ></p>
+               
+            </div>
+            <div class="input-container">
+                <input id="Date" oninput="validate(event,false)" type="date" required="">
+                <label>Birthday</label>
+                <span id="date" class="small"></span>
+            </div>
+
+            <input onclick="validate(event,false)" type="radio" value="female" id="f"name="gender" /> <label for="f">female</label> &ensp;
+            <input onclick="validate(event,false)" type="radio" value="male" id="m" name="gender" /> <label for="m">male</label>
+       <br>     <span id="gender" class="small"></span>
+             <br>
+            <br>
+            <div class="text-center">
+                <button id="btn" type="submit"  class="btn btn-danger btn-outline-dark text-white button">
+                    Sign Up
+                </button>
+            </div><br />
+            <p class="text-center">
+                <a  href="./login.html">LogIn</a>
+            </p>
+
+        </div>
+    </div>
+    </form>
+    <br />
+
+<script src="./assets/node_modules/jquery/dist/jquery.js"></script>
+<script lang="js" src="./js/register.js"></script>
+<script src="./assets/js/bootstrap.js"></script>
+
+</script>
+
+</body>
+</html>
