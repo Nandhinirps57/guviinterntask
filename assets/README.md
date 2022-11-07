@@ -11,10 +11,11 @@ This project contains three modules
 #Technologies Used
 * HTML
 * SCSS
-* CSS
-* JS
+* CSS (Bootstrap)
+* JS (AJAX, jQuer)
 * PHP
 * Redis
 * Mongo
 * Mysql
+* JSON
 
