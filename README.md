@@ -1,4 +1,4 @@
-# guviinterntask
+# GuviInternTask
 This project contains three modules 
 # register, login, and profiles Page
 -------------------------------
